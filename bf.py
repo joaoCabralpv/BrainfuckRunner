@@ -1,3 +1,8 @@
+import sys
+
+bfCodeFile = sys.argv[1]
+pyCodeFile = sys.argv[2]
+
 #initializes the array with zeros
 code = """
 a=[]
@@ -8,8 +13,8 @@ i=0
 
 """
 #opens the files 
-file = open("r.py","w")
-bfcode = open("test.bf", "r")
+file = open(pyCodeFile,"w")
+bfcode = open(bfCodeFile, "r")
 bfcode = bfcode.read()
 
 TabCounter = 0
